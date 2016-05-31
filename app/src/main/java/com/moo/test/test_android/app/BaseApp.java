@@ -2,6 +2,8 @@ package com.moo.test.test_android.app;
 
 import android.app.Application;
 
+import com.moo.test.test_android.utils.T;
+
 import org.xutils.x;
 
 /**
@@ -15,5 +17,6 @@ public class BaseApp extends Application {
         super.onCreate();
         mBaseApp = this;
         x.Ext.init(this);
+        T.init(this);
     }
 }
