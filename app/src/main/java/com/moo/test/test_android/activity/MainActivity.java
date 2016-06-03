@@ -45,7 +45,7 @@ public class MainActivity extends BaseActivity {
 
     private List<TextViewInfo> data;
     private CommonAdapter<TextViewInfo> adapter;
-    private int[] colors = {0xffa640, 0x5dff40, 0x40d9ff, 0xff4081};
+    private int[] colors = {R.drawable.shape_textview_main_content, R.drawable.shape_textview_main_content1, R.drawable.shape_textview_main_content2, R.drawable.shape_textview_main_content3};
 
     private Handler handler = new Handler() {
         @Override
@@ -60,11 +60,6 @@ public class MainActivity extends BaseActivity {
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public void initView() {
         final DisplayMetrics displayMetrics = getApplicationContext().getResources().getDisplayMetrics();
         ctbMainTitle.setTitle(displayMetrics.widthPixels + "----" + displayMetrics.heightPixels);
@@ -73,14 +68,11 @@ public class MainActivity extends BaseActivity {
         rvMainContent.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 //        rvMainContent.setLayoutManager(new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false));
         adapter = new CommonAdapter<TextViewInfo>(MainActivity.this, android.R.layout.simple_list_item_1, data) {
-            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+            @TargetApi(Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void convert(ViewHolder holder, TextViewInfo textViewInfo) {
                 TextView textView = holder.getView(android.R.id.text1);
-                textView.setBackgroundResource(R.drawable.shape_textview_main_content);
-//                GradientDrawable gradientDrawable = (GradientDrawable) textView.getBackground();
-//                gradientDrawable.setColor(colors[new Random().nextInt(4)]);
-//                textView.setBackground(gradientDrawable);
+                textView.setBackgroundResource(colors[new Random().nextInt(4)]);
                 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 layoutParams.setMargins(5, 5, 5, 5);
                 textView.setGravity(Gravity.CENTER);
