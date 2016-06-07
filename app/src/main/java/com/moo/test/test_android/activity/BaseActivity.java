@@ -22,32 +22,27 @@ import org.xutils.x;
  */
 public abstract class BaseActivity extends AppCompatActivity {
     private Typeface typeface;
-    private LayoutInflater layoutInflater;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-//        try {
-//            layoutInflater = LayoutInflater.from(this);
-//            LayoutInflaterCompat.setFactory(layoutInflater, new LayoutInflaterFactory() {
-//                @Override
-//                public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
-//                    View view;
-//                    if (typeface == null) {
-//                        typeface = Typeface.createFromAsset(getAssets(), "pop.ttf");
-//                    }
-//
-//                    AppCompatDelegate delegate = getDelegate();
-//                    view = delegate.createView(parent, name, context, attrs);
-//
-//                    if (view != null && view instanceof TextView) {
-//                        ((TextView) view).setTypeface(typeface);
-//                    }
-//                    return view;
-//                }
-//            });
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        LayoutInflater layoutInflater = LayoutInflater.from(this);
+            LayoutInflaterCompat.setFactory(layoutInflater, new LayoutInflaterFactory() {
+                @Override
+                public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
+                    View view;
+                    if (typeface == null) {
+                        typeface = Typeface.createFromAsset(getAssets(), "pop.ttf");
+                    }
+
+                    AppCompatDelegate delegate = getDelegate();
+                    view = delegate.createView(parent, name, context, attrs);
+
+                    if (view != null && view instanceof TextView) {
+                        ((TextView) view).setTypeface(typeface);
+                    }
+                    return view;
+                }
+            });
         super.onCreate(savedInstanceState);
         x.view().inject(this);
         ActivityTaskManager.getActivityTaskManager().pushActivity(this);
