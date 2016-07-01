@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\layout\\activity_capture.xml",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\layout\\activity_result.xml",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\layout\\activity_capture.xml",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\layout\\activity_result.xml",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\layout\\activity_result.xml"
+    }
+]

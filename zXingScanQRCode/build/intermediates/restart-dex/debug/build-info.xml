@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86,armeabi-v7a"
+    api-level="18"
+    density="xhdpi"
+    format="7"
+    timestamp="14781995436056"
+    token="7406319344796941463" >
+
+    <task
+        name="javac"
+        duration="4410" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="379" />
+    <task
+        name="verifier"
+        duration="107" />
+
+    <artifact
+        location="D:\workspace\android_studio\Test_Android\zXingScanQRCode\build\outputs\apk\zXingScanQRCode-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="14781995436056" >
+        <artifact
+            location="D:\workspace\android_studio\Test_Android\zXingScanQRCode\build\outputs\apk\zXingScanQRCode-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

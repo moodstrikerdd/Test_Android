@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_flashlight_pressed.png",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_flashlight_pressed.png"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_flashlight_pressed.png",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_flashlight_pressed.png"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_photo_normal.png",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_photo_normal.png"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_photo_pressed.png",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_photo_pressed.png"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_flashlight_normal.png",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_flashlight_normal.png"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_flashlight_normal.png",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_flashlight_normal.png"
+    },
+    {
+        "merged": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_photo_normal.png",
+        "source": "E:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_photo_normal.png"
+    },
+    {
+        "merged": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scan_photo_pressed.png",
+        "source": "D:\\workspace\\android_studio\\Test_Android\\zXingScanQRCode\\src\\main\\res\\drawable-hdpi\\scan_photo_pressed.png"
+    }
+]
