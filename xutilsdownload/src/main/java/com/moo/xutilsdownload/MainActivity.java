@@ -1,5 +1,8 @@
 package com.moo.xutilsdownload;
 
+import android.app.Activity;
+import android.app.Application;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ButtonBarLayout;
@@ -45,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        String url = "http://img.ivsky.com/img/bizhi/pre/201606/24/the_legend_of_the_condor_heroes.jpg";
+        String url = "http://www.tiantianbook.cn/files/download/apk_reader/sandboxReaderJ_masV1.apk";
         RequestParams requestParams = new RequestParams(url);
-        requestParams.setSaveFilePath(this.getExternalFilesDir("file").getPath());
-        cancelable = x.http().get(requestParams, new Callback.ProgressCallback<File>() {
+        requestParams.setAutoRename(true);
+        cancelable = x.http().post(requestParams, new Callback.ProgressCallback<File>() {
             @Override
             public void onWaiting() {
 
