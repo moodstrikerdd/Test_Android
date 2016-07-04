@@ -20,7 +20,16 @@
             android:id="@+id/btn_main_menu1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:onClick="click"
-            android:text="横向移动" />
+            android:text="开始动画" />
+
+        <Button
+            android:id="@+id/btn_main_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="登陆" />
     </LinearLayout>
 </RelativeLayout>
