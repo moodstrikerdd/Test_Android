@@ -48,6 +48,13 @@ public class LoginActivity extends AppCompatActivity {
                 float rotationY = (Float) animation.getAnimatedValue();
                 Log.d("rotationY", "---" + rotationY);
                 flMain.setRotationY(rotationY);
+                if (rotationY >= -90) {
+                    flMain.setScaleX((90 + rotationY) / 90);
+                } else {
+                    flMain.setScaleX((-rotationY - 270) / 90);
+                }
+
+                Log.d("scaleX", "---" + flMain.getScaleX());
             }
         };
         AnimatorListenerAdapter animatorListenerAdapterLogin = new AnimatorListenerAdapter() {
