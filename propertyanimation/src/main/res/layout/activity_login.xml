@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fl_login_main"
-    android:layout_width="200dp"
-    android:layout_gravity="center"
-    android:layout_height="300dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
 
-    <LinearLayout
-        android:id="@+id/ll_login_login"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/login"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="10dp">
+    <FrameLayout
+        android:id="@+id/fl_login_main"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
 
-        <TextView
-            android:id="@+id/tv_login"
+        <LinearLayout
+            android:id="@+id/ll_login_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
+            android:layout_height="match_parent"
+            android:background="@mipmap/login"
             android:gravity="center"
-            android:onClick="textClick"
-            android:text="登陆"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:padding="10dp">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="textClick"
+                android:text="登陆"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/ll_login_register"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/register"
-        android:gravity="center"
-        android:visibility="invisible">
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_register"
+        <LinearLayout
+            android:id="@+id/ll_login_register"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
+            android:layout_height="match_parent"
+            android:background="@mipmap/register"
             android:gravity="center"
-            android:onClick="textClick"
-            android:text="注册"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-</FrameLayout>
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="textClick"
+                android:text="注册"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/cb_login_need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:checked="false"
+        android:text="可超出view（旋转明显）" />
+</RelativeLayout>

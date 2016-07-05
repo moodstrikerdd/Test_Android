@@ -2,11 +2,13 @@ package com.moo.propertyanimation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,6 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     private FrameLayout flMain;
     private LinearLayout llLogin;
     private LinearLayout llRegister;
+    private CheckBox cbNeed;
 
     private ValueAnimator animatorFirst;
     private ValueAnimator animatorSecond;
@@ -35,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         flMain = (FrameLayout) findViewById(R.id.fl_login_main);
         llLogin = (LinearLayout) findViewById(R.id.ll_login_login);
         llRegister = (LinearLayout) findViewById(R.id.ll_login_register);
+        cbNeed = (CheckBox) findViewById(R.id.cb_login_need);
     }
 
 
@@ -46,15 +50,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float rotationY = (Float) animation.getAnimatedValue();
-                Log.d("rotationY", "---" + rotationY);
-                flMain.setRotationY(rotationY);
-                if (rotationY >= -90) {
-                    flMain.setScaleX((90 + rotationY) / 90);
-                } else {
-                    flMain.setScaleX((-rotationY - 270) / 90);
+                if (cbNeed.isChecked()) {
+                    flMain.setRotationY(rotationY);
                 }
-
-                Log.d("scaleX", "---" + flMain.getScaleX());
+                flMain.setScaleX((float) Math.cos(-rotationY / 180 * 3.14));
             }
         };
         AnimatorListenerAdapter animatorListenerAdapterLogin = new AnimatorListenerAdapter() {
@@ -72,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
+//        PropertyValuesHolder holder= new PropertyValuesHolder();
         animatorSecond = ValueAnimator.ofFloat(-270, -360);
         animatorSecond.setTarget(flMain);
         animatorSecond.setDuration(500);
@@ -101,4 +101,5 @@ public class LoginActivity extends AppCompatActivity {
             animatorFirst.start();
         }
     }
+
 }
