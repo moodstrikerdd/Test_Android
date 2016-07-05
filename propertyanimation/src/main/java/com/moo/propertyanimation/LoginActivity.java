@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                 float rotationY = (Float) animation.getAnimatedValue();
                 if (cbNeed.isChecked()) {
                     flMain.setRotationY(rotationY);
+
                 }
                 flMain.setScaleX((float) Math.cos(-rotationY / 180 * 3.14));
             }
