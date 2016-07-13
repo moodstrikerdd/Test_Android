@@ -1,2 +1,2 @@
-include ':app', ':toptab', ':changegridviewdemo', ':xutilsdownload', ':sidesliplist', ':propertyanimation'
+include ':app', ':toptab', ':changegridviewdemo', ':xutilsdownload', ':sidesliplist', ':propertyanimation', ':webviewdemo', ':flowviewgroup'
 include ':zXingScanQRCode'

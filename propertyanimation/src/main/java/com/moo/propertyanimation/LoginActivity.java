@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-//        PropertyValuesHolder holder= new PropertyValuesHolder();
+//        PropertyValuesHolder holder= PropertyValuesHolder.of
         animatorSecond = ValueAnimator.ofFloat(-270, -360);
         animatorSecond.setTarget(flMain);
         animatorSecond.setDuration(500);

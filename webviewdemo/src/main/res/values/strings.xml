@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WebVIewDemo</string>
+    <array name="select_image">
+        <item>拍照</item>
+        <item>选择照片</item>
+    </array>
+</resources>
