@@ -27,6 +27,7 @@ public class ViewHolder extends RecyclerView.ViewHolder
     private View mConvertView;
     private Context mContext;
     private int mLayoutId;
+    private ViewHolder holder;
 
     public ViewHolder(Context context, View itemView, ViewGroup parent, int position)
     {
@@ -41,21 +42,17 @@ public class ViewHolder extends RecyclerView.ViewHolder
 
 
     public static ViewHolder get(Context context, View convertView,
-                                 ViewGroup parent, int layoutId, int position)
-    {
-        if (convertView == null)
-        {
-            View itemView = LayoutInflater.from(context).inflate(layoutId, parent,
-                    false);
-            ViewHolder holder = new ViewHolder(context, itemView, parent, position);
-            holder.mLayoutId = layoutId;
-            return holder;
-        } else
-        {
-            ViewHolder holder = (ViewHolder) convertView.getTag();
-            holder.mPosition = position;
-            return holder;
+                                 ViewGroup parent, int layoutId, int position){
+        ViewHolder holder;
+        if (convertView == null) {
+            View itemView = LayoutInflater.from(context).inflate(layoutId, parent,false);
+            holder =  new ViewHolder(context, itemView, parent, position);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
         }
+        holder.mPosition = position;
+        holder.mLayoutId = layoutId;
+        return holder;
     }
 
 
