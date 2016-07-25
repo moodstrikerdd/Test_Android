@@ -45,7 +45,7 @@ public class MainActivity extends BaseActivity implements IShowView {
         progressDialog.setMessage("数据请求中...");
         lvMainContent = (ListView) findViewById(R.id.lv_main_content);
         data = new ArrayList<>();
-        adapter = new UserListAdapter(this, data);
+        adapter = new UserListAdapter(this, data, R.layout.list_item_user);
         lvMainContent.setAdapter(adapter);
     }
 
