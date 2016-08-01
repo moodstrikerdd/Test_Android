@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_main_fragments"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/rg_main_tabs" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main_tabs" />
+
+    <RadioGroup
+        android:id="@+id/rg_main_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_tabs"
+            android:button="@null"
+            android:gravity="center"
+            android:text="选项一"
+            android:textColor="@drawable/selector_main_tabs_text" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_tabs"
+            android:button="@null"
+            android:gravity="center"
+            android:text="选项一"
+            android:textColor="@drawable/selector_main_tabs_text" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_tabs"
+            android:button="@null"
+            android:gravity="center"
+            android:text="选项一"
+            android:textColor="@drawable/selector_main_tabs_text" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_tabs"
+            android:button="@null"
+            android:gravity="center"
+            android:text="选项一"
+            android:textColor="@drawable/selector_main_tabs_text" />
+
+    </RadioGroup>
+</RelativeLayout>
