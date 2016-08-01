@@ -12,6 +12,10 @@ import org.xutils.x;
 public class BaseApp extends Application {
     public static BaseApp mBaseApp;
 
+    public static BaseApp getBaseApp() {
+        return mBaseApp;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
