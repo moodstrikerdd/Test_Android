@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#c25d59</color>
+    <color name="colorGray">#878787</color>
+    <color name="colorblack">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="f8f8f8">#f8f8f8</color>
+    <color name="c999999">#999999</color>
+
+    <!--普通充白色-->
+    <color name="colorCommWhite">#fafafa</color>
+    <!--透明黑-->
+    <color name="colorTransBlack">#c8000000</color>
+
+    <!--zxing显示条码背景色-->
+    <color name="ll_show_my2dCode">#ebebeb</color>
+
+    <!--顶部公共菜单背景颜色-->
+    <color name="comm_top_bg_color">#dd403b</color>
+    <!--内填充白色-->
+    <color name="colorWhite">#fafafa</color>
+    <!--内填充背景色-->
+    <color name="colorGrayBg">#f0f0f0</color>
+    <!--上下分割线颜色-->
+    <color name="title_divide">#d4d4d4</color>
+    <!--内分割线颜色-->
+    <color name="inner_divide">#e6e6e6</color>
+    <!--主页面底部文字未选中颜色-->
+    <color name="main_bottom_text">#666666</color>
+    <!--主页面底部文字选中颜色-->
+    <color name="main_bottom_text_selected">#dd403b</color>
+
+    <!--图书馆界面菜单标题颜色-->
+    <color name="lib_menu_title">#333333</color>
+    <!--图书馆界面菜单描述高亮-->
+    <color name="lib_menu_dis_mark">#2626d0</color>
+    <!--图书馆界面菜单描述-->
+    <color name="lib_menu_dis">#999999</color>
+    <!--图书馆界面title透明边框-->
+    <color name="lib_title_stroke">#00ffffff</color>
+    <!--图书馆底部dot未选中颜色-->
+    <color name="lib_dot_normal">#d4d4d4</color>
+    <!--图书馆底部dot选中颜色-->
+    <color name="lib_dot_select">#666666</color>
+
+
+    <!--个人中心菜单字体颜色-->
+    <color name="mine_menu_text_color">#333333</color>
+    <!--个人中心空隙背景颜色-->
+    <color name="mine_bg_color">#efefef</color>
+    <!--个人中心菜单背景颜色-->
+    <color name="mine_menu_bg_color">#fdfdfe</color>
+    <!--个人中心空白背景颜色-->
+    <color name="mine_empty_bg_color">#efefef</color>
+
+    <!--选择图书馆背景颜色-->
+    <color name="choose_lib_search_gb">#d4d4d4</color>
+    <!--选择图书馆边框颜色-->
+    <color name="choose_lib_border">#e6e6e6</color>
+    <!--选择图书馆省份文字颜色-->
+    <color name="choose_lib_group">#666666</color>
+    <!--选择图书馆图书馆文字颜色-->
+    <color name="choose_lib_child">#888888</color>
+    <!--开启定位文字颜色-->
+    <color name="choose_start_location">#2626d0</color>
+
+
+    <!--底部弹出menu item文字颜色-->
+    <color name="bottom_menu_item_text">#333333</color>
+    <!--底部弹出menu cancel文字颜色-->
+    <color name="bottom_menu_item_cancel">#999999</color>
+
+
+    <!--允许移动网络开关选中颜色-->
+    <color name="net_switch_choose">#dc403b</color>
+    <!--允许移动网络开关填充颜色-->
+    <color name="net_switch_true">#c7c8cc</color>
+    <!--允许移动网络开关边框色-->
+    <color name="net_switch_stroke">#c5c7cb</color>
+
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#88000000</color>
+    <!--扫描框四角颜色-->
+    <!--<color name="viewfinder_cornor">#C35D59</color>-->
+    <color name="viewfinder_cornor">#56ced6</color>
+
+    <!--s输入框文字颜色-->
+    <color name="login_input_lib_color">#333333</color>
+    <!--登录字体颜色-->
+    <color name="login_button_login">#FAFAFA</color>
+    <!--登录背景色-->
+    <color name="login_backgroundcolor">#f0f0f0</color>
+    <!--登录颜色-->
+    <color name="login_buttoncolor">#DD403B</color>
+    <!--登录颜色-->
+    <color name="login_buttoncolor_select">#B82119</color>
+
+    <!--dialog取消按键颜色-->
+    <color name="cancel_text_color">#999999</color>
+    <!--dialog确认按键颜色-->
+    <color name="confirm_text_color">#d4524c</color>
+    <!--日期选择 选中日期颜色-->
+    <color name="wheel_select_text">#dd403b</color>
+    <!--日期选择 未选中日期颜色-->
+    <color name="wheel_unselect_text">#c2c1c1</color>
+    <!--日期选择 下划线颜色-->
+    <color name="wheel_baseline">#00ffffff</color>
+    <!--日期选择 未选中日期背景色-->
+    <color name="wheel_bg">#f2f2f2</color>
+    <!--关于我们-->
+    <color name="about_version_fontcolor">#999999</color>
+    <color name="about_topic_fontcolor">#333333</color>
+
+    <color name="search_view_color">#CCCCCC</color>
+    <!--最近搜索背景色-->
+    <color name="search_history_bgcolor">#ffffff</color>
+    <!--最近搜索  文字颜色-->
+    <color name="search_history_fontcolor">#555555</color>
+    <!--最近搜索历史文字颜色-->
+    <color name="search_history_latefontcolor">#aaaaaa</color>
+
+    <!--最近搜索历史文字背景色-->
+    <color name="search_history_latebgcolor">#f8f8f8</color>
+    <!--搜索按钮文字颜色-->
+    <color name="search_btn_fontcolor">#FFFFFF</color>
+    <!--搜索历史文字边框颜色-->
+    <color name="search_history_text_border">#d9d9d9</color>
+
+    <!--热门搜索文字填充颜色-->
+    <color name="search_hot_text_solid1">#61e2a4</color>
+    <color name="search_hot_text_solid2">#ff9351</color>
+    <color name="search_hot_text_solid3">#69bfdb</color>
+    <color name="search_hot_text_solid4">#ffc85e</color>
+    <color name="search_hot_text_solid5">#b9db69</color>
+    <color name="search_hot_text_solid6">#db69b7</color>
+    <color name="search_hot_text_solid7">#61e2dd</color>
+    <!-- 书友会字体颜色-->
+    <color name="club_topmenu_fontcolor">#999999</color>
+    <color name="club_topmenu_fontcolor_select">#ff6600</color>
+    <color name="club_bottommenu_diver_solid">#f8f8f8</color>
+    <color name="club_bottommenu_diver_stroke">#dddddd</color>
+    <!-- 书友会封面边框-->
+    <color name="club_bookface_stroke">#BCBCBC</color>
+    <color name="club_bookface_textcolor">#333333</color>
+    <color name="club_add_textcolor">#555555</color>
+    <color name="club_person_textcolor">#999999</color>
+    <color name="club_item_bgcolor">#ffffff</color>
+    <!--书友会搜索结果间隔线颜色-->
+    <color name="club_book_search_diver_line">#e9e7e3</color>
+    <!--书回下载进度颜色-->
+    <color name="shelf_download_position">#ff6036</color>
+
+    <!--我的图书馆-->
+    <color name="mylib_item_diver_color">#E6E6E6</color>
+    <color name="mylib_bg_color">#E6E6E6</color>
+    <color name="mylib_itembg_color">#FFFFFF</color>
+    <color name="mylib_name_color">#333333</color>
+    <color name="shelf_manager_bottm_line_color">#c7c7c7</color>
+    <color name="shelf_manager_check_text_color">#dd4038</color>
+    <color name="shelf_manager_uncheck_text_color">#bbbbbb</color>
+    <color name="shelf_dot_color">#fe6700</color>
+
+</resources>
