@@ -2,15 +2,21 @@ package com.moo.flowviewgroup.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by moo on 2016/7/13.
  */
 public class FlowLayout extends ViewGroup {
+    private Context mContext;
     private OnItemClickListener onItemClickListener;
 
     public FlowLayout(Context context) {
@@ -23,6 +29,7 @@ public class FlowLayout extends ViewGroup {
 
     public FlowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        this.mContext = context;
     }
 
 
@@ -103,6 +110,7 @@ public class FlowLayout extends ViewGroup {
             final int position = i;
             View view = views.get(position);
             addView(view, position);
+            Log.e("add", "add=====>" + i);
             view.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -112,6 +120,33 @@ public class FlowLayout extends ViewGroup {
                 }
             });
         }
+    }
+
+    public void setTexts(List<String> texts) {
+        int[] shapes = {};
+        setTexts(texts, shapes);
+    }
+
+    public void setTexts(List<String> texts, int shape) {
+        int[] shapes = {shape};
+        setTexts(texts, shapes);
+    }
+
+    public void setTexts(List<String> texts, int[] shapes) {
+        List<View> views = new ArrayList<>();
+        for (int i = 0; i < texts.size(); i++) {
+            TextView textView = new TextView(mContext);
+            ViewGroup.MarginLayoutParams params = new ViewGroup.MarginLayoutParams(ViewGroup.MarginLayoutParams.WRAP_CONTENT, ViewGroup.MarginLayoutParams.WRAP_CONTENT);
+            params.setMargins(5, 5, 5, 5);
+            textView.setLayoutParams(params);
+            textView.setGravity(Gravity.CENTER);
+            if (shapes.length > 0) {
+                textView.setBackgroundResource(shapes[new Random().nextInt(shapes.length)]);
+            }
+            textView.setText(texts.get(i));
+            views.add(textView);
+        }
+        setViews(views);
     }
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {

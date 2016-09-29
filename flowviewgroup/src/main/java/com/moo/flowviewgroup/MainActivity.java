@@ -21,23 +21,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         flowLayout = (FlowLayout) findViewById(R.id.fl_main_content);
-        List<View> list = new ArrayList<>();
+        List<String> texts = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            TextView textView = new TextView(this);
-            ViewGroup.MarginLayoutParams params = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.setMargins(10, 5, 5, 10);
-            textView.setPadding(10, 5, 5, 10);
-            textView.setLayoutParams(params);
-            textView.setBackgroundResource(R.drawable.shape_text_item);
-            textView.setText(i + "");
-            textView.setClickable(true);
-            if (i > 10) {
-                textView.setVisibility(View.GONE);
-            }
-            list.add(textView);
+            texts.add("item" + (i + 1));
         }
-
-        flowLayout.setViews(list);
+        flowLayout.setTexts(texts, new int[]{R.drawable.shape_text_item, R.drawable.shape_text_item1, R.drawable.shape_text_item2});
+//        List<View> list = new ArrayList<>();
+//        for (int i = 0; i < 20; i++) {
+//            TextView textView = new TextView(this);
+//            ViewGroup.MarginLayoutParams params = new ViewGroup.MarginLayoutParams(ViewGroup.MarginLayoutParams.WRAP_CONTENT, ViewGroup.MarginLayoutParams.WRAP_CONTENT);
+//            params.setMargins(30, 20, 5, 10);
+////            textView.setPadding(10, 5, 5, 10);
+//            textView.setLayoutParams(params);
+//            textView.setBackgroundResource(R.drawable.shape_text_item);
+//            textView.setText(i + "");
+//            textView.setClickable(true);
+//            list.add(textView);
+//        }
+//
+//        flowLayout.setViews(list);
         flowLayout.setOnItemClickListener(new FlowLayout.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int Position) {
